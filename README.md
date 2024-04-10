@@ -2,7 +2,7 @@
 
 ## How to Use?
 
-[GIF soon]
+![alt Usage GIF](https://raw.githubusercontent.com/skndash96/jee-scorecard/main/usage.gif)
 
 - Copy the code from [./min.js](https://github.com/skndash96/jee-scorecard/tree/main/min.js)
 - Open Dev tools and Paste the min.js in the console and hit enter.

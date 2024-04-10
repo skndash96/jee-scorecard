@@ -50,8 +50,6 @@
         });
     }
 
-    qs = qs.map(q => ({ ...q, score: ans_map[q.id] === q.marked ? 4 : q.marked ? -1 : 0 }));
-
     let attempted = 0, unattempted = 0,
         correct = 0, wrong = 0;
 
