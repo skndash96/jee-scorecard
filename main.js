@@ -14,7 +14,20 @@
     4. Good to go
     */
     let paper_map = {
-        "27s1": "https://json.extendsclass.com/bin/ad0b26002978"
+        "27s1": "https://json.extendsclass.com/bin/ad0b26002978",
+        "27s2": "https://json.extendsclass.com/bin/fefdb99829ed",
+        "29s1": "https://json.extendsclass.com/bin/904f0d88131c",
+        "29s2": "https://json.extendsclass.com/bin/46c43bba08a8",
+        "30s1": "https://json.extendsclass.com/bin/81f6b0ed9c31",
+        "30s2": "https://json.extendsclass.com/bin/ef17bbd48072",
+        "31s1": "https://json.extendsclass.com/bin/4c2836982021",
+        "31s2": "https://json.extendsclass.com/bin/a6a0bd4c830b",
+        
+        "01s1": "https://json.extendsclass.com/bin/2902b9729668",
+        "01s2": "https://json.extendsclass.com/bin/d2ba75006751",
+        //👇Duplicate cause I'm not aware if the date is 01/MM or 1/MM
+        "1s1": "https://json.extendsclass.com/bin/2902b9729668",
+        "1s2": "https://json.extendsclass.com/bin/d2ba75006751"
     };
 
     //FETCH ANSWER KE
