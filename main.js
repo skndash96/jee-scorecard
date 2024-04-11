@@ -25,7 +25,7 @@
         
         "01s1": "https://json.extendsclass.com/bin/2902b9729668",
         "01s2": "https://json.extendsclass.com/bin/d2ba75006751",
-        //👇Duplicate cause I'm not aware if the date is 01/MM or 1/MM
+        //👇Duplicate cause I'm not aware if the date is 01/MM/YYYY or 1/MM/YYYY
         "1s1": "https://json.extendsclass.com/bin/2902b9729668",
         "1s2": "https://json.extendsclass.com/bin/d2ba75006751"
     };
