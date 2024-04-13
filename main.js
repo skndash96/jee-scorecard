@@ -22,16 +22,19 @@
         "30s2": "https://json.extendsclass.com/bin/ef17bbd48072",
         "31s1": "https://json.extendsclass.com/bin/4c2836982021",
         "31s2": "https://json.extendsclass.com/bin/a6a0bd4c830b",
-        
+
         "01s1": "https://json.extendsclass.com/bin/2902b9729668",
         "01s2": "https://json.extendsclass.com/bin/d2ba75006751",
 
+        "04s1": "https://json.extendsclass.com/bin/e02a72e68a41",
         "05s2": "https://json.extendsclass.com/bin/9a5213793a4e",
         "06s1": "https://json.extendsclass.com/bin/2508ed9bac9a",
         "08s2": "https://json.extendsclass.com/bin/a54406466af0",
         "09s1": "https://json.extendsclass.com/bin/59f50c0b8bf4",
-
+        "09s2": "https://json.extendsclass.com/bin/760b804b0fd8"
     };
+
+    //4s1 5s2, 6s1, 8s2, 9s1, 9s2
 
     //FETCH ANSWER KE
     let ans_map;
@@ -92,7 +95,7 @@
     }
 
     function pad(i, e, space) {
-        let s = `${i < 10 ? "0" : ""}${i+1}${e}`;
+        let s = `${i < 10 ? "0" : ""}${i + 1}${e}`;
 
         while (s.length < space) { s += " " }
         return s;
@@ -132,11 +135,11 @@ ${sw}`;
 
     let box = document.createElement("div");
     box.style = "background: black; color: white; padding: 1rem; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); box-shadow: 3px 3px 10px #00000055;";
-    
+
     let el = document.createElement("pre");
     el.style = "font-family: sans-serif;";
     el.textContent = output;
-    
+
     let button = document.createElement("button");
     button.addEventListener("click", e => {
         window.navigator.clipboard.writeText(output);
@@ -146,6 +149,6 @@ ${sw}`;
     button.textContent = "COPY";
 
     box.append(el, button);
-    
+
     document.body.appendChild(box);
 })();
