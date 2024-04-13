@@ -26,7 +26,8 @@
         "01s1": "https://json.extendsclass.com/bin/2902b9729668",
         "01s2": "https://json.extendsclass.com/bin/d2ba75006751",
 
-        "06s1": "https://json.extendsclass.com/bin/2508ed9bac9a"
+        "06s1": "https://json.extendsclass.com/bin/2508ed9bac9a",
+        "08s2": "https://json.extendsclass.com/bin/a54406466af0"
     };
 
     //FETCH ANSWER KE
