@@ -25,9 +25,8 @@
         
         "01s1": "https://json.extendsclass.com/bin/2902b9729668",
         "01s2": "https://json.extendsclass.com/bin/d2ba75006751",
-        //👇Duplicate cause I'm not aware if the date is 01/MM/YYYY or 1/MM/YYYY
-        "1s1": "https://json.extendsclass.com/bin/2902b9729668",
-        "1s2": "https://json.extendsclass.com/bin/d2ba75006751"
+
+        "06s1": "https://json.extendsclass.com/bin/2508ed9bac9a"
     };
 
     //FETCH ANSWER KE
