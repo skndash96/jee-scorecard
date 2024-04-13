@@ -27,9 +27,17 @@
         "01s2": "https://json.extendsclass.com/bin/d2ba75006751",
 
         "04s1": "https://json.extendsclass.com/bin/e02a72e68a41",
+        "04s2": "https://json.extendsclass.com/bin/d45bb3017d92",
+        
+        "05s1": "https://json.extendsclass.com/bin/f0a2446e7f12",
         "05s2": "https://json.extendsclass.com/bin/9a5213793a4e",
+        
         "06s1": "https://json.extendsclass.com/bin/2508ed9bac9a",
+        "06s2": "https://json.extendsclass.com/bin/b3f147fa1f70",
+        
+        "08s1": "https://json.extendsclass.com/bin/497e7d9b9d04",
         "08s2": "https://json.extendsclass.com/bin/a54406466af0",
+        
         "09s1": "https://json.extendsclass.com/bin/59f50c0b8bf4",
         "09s2": "https://json.extendsclass.com/bin/760b804b0fd8"
     };
@@ -56,16 +64,18 @@
         let is_mcq = tds[0] === "MCQ";
 
         let marked = tbody.parentNode.parentElement.firstChild.firstChild.lastChild.lastChild.textContent.trim();
+        let notAnswered = is_mcq ? (tds[7] === "--") : (marked === "--");
+
         marked = is_mcq
-            ? ("Not Answered" === tds[6] ? null : tds.slice(2, 6)[parseInt(tds[7]) - 1])
-            : ("Not Answered" === tds[2] ? null : marked);
+            ? (notAnswered ? null : tds.slice(2, 6)[parseInt(tds[7]) - 1])
+            : (notAnswered ? null : marked);
 
         qs.push({
             type: tds[0],
             id: tds[1],
             opts: is_mcq ? tds.slice(2, 6) : [],
             marked,
-            score: ans_map[tds[1]] === marked ? 4 : marked ? -1 : 0
+            score: ans_map[tds[1]] === marked ? 4 : notAnswered ? 0 : -1
         });
     }
 
