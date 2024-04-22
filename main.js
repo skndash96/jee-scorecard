@@ -65,6 +65,8 @@
 
         let marked = tbody.parentNode.parentElement.firstChild.firstChild.lastChild.lastChild.textContent.trim();
         let notAnswered = is_mcq ? (tds[7] === "--") : (marked === "--");
+        let ans = ans_map[tds[1]]
+        let dropped = ans === "DROP";
 
         marked = is_mcq
             ? (notAnswered ? null : tds.slice(2, 6)[parseInt(tds[7]) - 1])
@@ -75,7 +77,7 @@
             id: tds[1],
             opts: is_mcq ? tds.slice(2, 6) : [],
             marked,
-            score: ans_map[tds[1]] === marked ? 4 : notAnswered ? 0 : -1
+            score: ans === marked ? 4 : (notAnswered || dropped) ? 0 : -1
         });
     }
 
